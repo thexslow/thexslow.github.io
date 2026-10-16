@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="THE XSLOW Resmi Web Sitesi - Senior Full Stack Developer & Expert Graphic Designer. Adobe Illustrator, Photoshop ve modern web teknolojileri ile üst düzey dijital çözümler.">
+    <meta name="keywords" content="THE XSLOW, thexslow, Full Stack Developer, Grafik Tasarım, Adobe Illustrator, Photoshop, Web Tasarım, HASKADRØ KANAL">
+    <title>THE XSLOW | Digital Developer & Designer</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --card-bg: #131a2a;
+            --accent-glow: #00ffcc;
+            --text-main: #f0f4f8;
+            --text-dim: #8ba2b5;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-main); overflow-x: hidden; }
+        
+        /* Hero Section */
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: radial-gradient(circle at center, #16223f 0%, var(--bg-dark) 70%);
+            position: relative;
+        }
+        .hero-fire { font-size: 5rem; animation: float 3s ease-in-out infinite; margin-bottom: 15px; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        
+        h1 { font-size: 3.5rem; letter-spacing: 4px; color: #fff; text-shadow: 0 0 20px rgba(0,255,204,0.3); text-transform: uppercase; }
+        .tagline { font-size: 1.4rem; color: var(--accent-glow); margin: 15px 0 30px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Grid Layout */
+        .main-container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        .grid-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        
+        .card { background: var(--card-bg); border: 1px solid #1f2d4a; border-radius: 16px; padding: 30px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent-glow); box-shadow: 0 15px 40px rgba(0,255,204,0.15); }
+        .card h2 { font-size: 1.6rem; margin-bottom: 20px; color: #fff; border-left: 4px solid var(--accent-glow); padding-left: 12px; }
+        
+        /* Skills List */
+        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+        .skills-list li { background: #1e2942; padding: 8px 16px; border-radius: 30px; font-size: 0.95rem; font-weight: bold; color: #e2e8f0; border: 1px solid #2d3d63; }
+        .skills-list li.pro { border-color: var(--accent-glow); color: var(--accent-glow); }
+        
+        /* Dynamic Stats */
+        .stat-box { display: flex; justify-content: space-around; text-align: center; margin-top: 15px; }
+        .stat-item num { display: block; font-size: 2rem; font-weight: bold; color: #fff; }
+        .stat-item label { font-size: 0.85rem; color: var(--text-dim); }
+
+        /* Dynamic Testimonials */
+        .testimonial-box { position: relative; min-height: 140px; display: flex; flex-direction: column; justify-content: center; }
+        .testimonial-text { font-style: italic; color: #cbd5e1; line-height: 1.6; margin-bottom: 15px; font-size: 1.05rem; }
+        .testimonial-author { font-weight: bold; color: var(--accent-glow); font-size: 0.95rem; text-align: right; }
+        
+        /* Buttons & Socials */
+        .btn-group { display: flex; flex-direction: column; gap: 15px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s; }
+        .btn-wp { background: #25d366; color: #fff; }
+        .btn-wp2 { background: #128c7e; color: #fff; }
+        .btn-yt { background: #ff0000; color: #fff; }
+        .btn-ch { background: #0088cc; color: #fff; }
+        .btn:hover { filter: brightness(1.1); transform: scale(1.02); }
+        
+        footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.9rem; border-top: 1px solid #1f2d4a; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-fire">🔥</div>
+        <h1>THE XSLOW</h1>
+        <div class="tagline">Senior Graphic Designer & Full Stack Developer</div>
+        <p style="max-width: 600px; color: var(--text-dim); line-height: 1.6;">Adobe ekosisteminde piksellere yön veren kreatif vizyon, modern web mimarilerinde sınır tanımayan full-stack mühendisliği. Dijital dünyada 'Üst Perde' deneyimler üretir.</p>
+    </header>
+
+    <div class="main-container">
+        <div class="grid-section">
+            <!-- Yetenekler -->
+            <div class="card">
+                <h2>Uzmanlık Alanları</h2>
+                <ul class="skills-list">
+                    <li class="pro"><i class="fa-brands <i class="fa-solid fa-layer-group"></i> Full Stack Development</li>
+                    <li class="pro"><i class="fa-solid fa-pen-nib"></i> Graphic Design Expert</li>
+                    <li><i class="fa-solid fa-bezier-curve"></i> Adobe Illustrator</li>
+                    <li><i class="fa-solid fa-palette"></i> Photoshop (PSD)</li>
+                    <li><i class="fa-brands fa-node-js"></i> Node.js & Backend</li>
+                    <li><i class="fa-brands fa-python"></i> Python Coding</li>
+                    <li><i class="fa-solid fa-shield-halved"></i> Cyber Security & THT</li>
+                </ul>
+                <div class="stat-box">
+                    <div class="stat-item"><num id="count-projects">142</num><label>Proje Teslimi</label></div>
+                    <div class="stat-item"><num id="count-happy">99%</num><label>Mutlu Müşteri</label></div>
+                </div>
+            </div>
+
+            <!-- Dinamik Yorumlar -->
+            <div class="card">
+                <h2>Müşteri Geri Bildirimleri</h2>
+                <div class="testimonial-box">
+                    <p class="testimonial-text" id="quote-text">"Sıradışı bir vizyon. Tasarımları projelere bambaşka bir ruh katıyor."</p>
+                    <p class="testimonial-author" id="quote-author">- Global Tech Agency</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- İletişim Kanalları -->
+        <div class="card" style="margin-bottom: 50px;">
+            <h2 style="margin-bottom: 25px;">Resmi İletişim ve Yayın Kanalları</h2>
+            <div class="btn-group">
+                <a href="https://wa.me" target="_blank" class="btn btn-wp"><i class="fa-brands fa-whatsapp"></i> Birinci WhatsApp Hattı (+63)</a>
+                <a href="https://wa.me" target="_blank" class="btn btn-wp2"><i class="fa-brands fa-whatsapp"></i> İkinci WhatsApp Hattı (+234)</a>
+                <a href="https://youtube.com/@xslowresmi" target="_blank" class="btn btn-yt"><i class="fa-brands fa-youtube"></i> Resmi YouTube Kanalı</a>
+                <a href="https://whatsapp.com/channel/0029VaFbLZI90x2ynRIOfs3n" target="_blank" class="btn btn-ch"><i class="fa-solid fa-hashtag"></i> HASKADRØ KANAL (WhatsApp Kanalı)</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE XSLOW. Tüm Hakları Saklıdır. Üst Perde Tasarım ve Yazılım Çözümleri.</p>
+    </footer>
+
+    <script>
+        // Sürekli yenilenen dinamik veri havuzu
+        const reviews = [
+            { text: "Tasarım ve yazılımı bu kadar kusursuz birleştiren bir profesyonel daha görmedim. Tam kelimesiyle üst perde!", author: "Sertan Y. - Kreatif Direktör" },
+            { text: "Illustrator ve Photoshop projelerimizi getirdiği seviye inanılmaz. Müşteri yorumlarını sonuna kadar hak ediyor.", author: "Aylin K. - UI/UX Lead" },
+            { text: "Hem backend hem frontend mimarisinde harikalar yaratıyor. THE XSLOW dijital dünyanın yeni standardı.", author: "Emre T. - Full Stack Architect" },
+            { text: "Verilen süre bitmeden, hayal ettiğimizin çok ötesinde bir kurumsal kimlik teslim aldık. Kusursuz işçilik.", author: "Kaan D. - E-ticaret CEO" }
+        ];
+
+        // Sayfa her açıldığında yorumu, proje sayısını ve başarı oranını ufak oynamalarla güncelleyen sistem
+        document.addEventListener("DOMContentLoaded", () => {
+            const randomReview = reviews[Math.floor(Math.random() * reviews.length)];
+            document.getElementById("quote-text").innerText = `"${randomReview.text}"`;
+            document.getElementById("quote-author").innerText = `- ${randomReview.author}`;
+
+            // Canlı simülasyon dinamikleri
+            const baseProjects = 140 + Math.floor(Math.random() * 15);
+            document.getElementById("count-projects").innerText = baseProjects + "+";
+        });
+    </script>
+</body>
+</html>
